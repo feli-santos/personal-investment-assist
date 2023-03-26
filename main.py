@@ -231,10 +231,10 @@ def plot_pie_chart(data):
                 text="Current Allocation", x=0.175, y=0.5, font_size=20, showarrow=False
             ),
             dict(text="Goal Allocation", x=0.175, y=1, font_size=20, showarrow=False),
-            dict(text=f"Suggestion:", x=0.55, y=0.6, font_size=16, showarrow=False),
+            dict(text=f"Suggestion:", x=0.58, y=0.6, font_size=16, showarrow=False),
             dict(
                 text=f"{action_suggestion}",
-                x=0.9,
+                x=0.95,
                 y=0.55,
                 font=dict(size=14),
                 showarrow=False,
@@ -291,14 +291,14 @@ def suggest_action(current_percentages, goal_percentages):
     if overall_buy:
         overall_buy.sort(key=lambda x: -x[1])
         best_buy = overall_buy[0][0]
-        buy_message = f"Buy more {best_buy} to increase allocation by {round(overall_buy[0][1],2)}%"
+        buy_message = f"Invest in {best_buy} to increase allocation by {round(overall_buy[0][1],2)}%"
     else:
         buy_message = "No suggestion to buy"
 
     if overall_sell:
         overall_sell.sort(key=lambda x: x[1])
         best_sell = overall_sell[0][0]
-        sell_message = f"Sell some {best_sell} to decrease allocation by {round(-overall_sell[0][1],2)}%"
+        sell_message = f"Stop investing in {best_sell} to decrease allocation by {round(-overall_sell[0][1],2)}%"
     else:
         sell_message = "No suggestion to sell"
 
