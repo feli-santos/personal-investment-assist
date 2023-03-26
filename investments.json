@@ -1,0 +1,20 @@
+{
+    "goal_percentage": {
+        "crypto": 10,
+        "fixed_income": 50,
+        "stocks": 5,
+        "reits": 5,
+        "acoes": 10,
+        "fiis": 10,
+        "emergency_fund": 10
+    },
+    "current_value": {
+        "crypto": 20000,
+        "fixed_income": 60000,
+        "stocks": 5000,
+        "reits": 5000,
+        "acoes": 15000,
+        "fiis": 15000,
+        "emergency_fund": 25000
+    }
+}
