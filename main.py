@@ -1,6 +1,5 @@
 import json
 import random
-import textwrap
 
 import plotly.graph_objs as go
 from plotly.subplots import make_subplots
@@ -132,6 +131,23 @@ def create_table(current_percentages, goal_percentages, total_value):
                 f"${diff_value:,.2f}",
             ]
         )
+
+    # Calculate total values
+    total_current_perc = sum(current_percs)
+    total_current_value = sum(current_values)
+
+    # Append total row to table data
+    table_data.append(
+        [
+            "Total Portfolio",
+            f"{total_current_perc:.2f}%",
+            f"${total_current_value:,.2f}",
+            f"-",
+            f"-",
+            f"-",
+            f"-",
+        ]
+    )
 
     table = go.Table(
         header=dict(

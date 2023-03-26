@@ -1,12 +1,12 @@
 {
     "goal_percentage": {
         "Crypto": 10,
-        "Fixed Income": 50,
-        "Stocks": 7.5,
-        "Reits": 7.5,
+        "Fixed Income": 37.5,
+        "Stocks": 10,
+        "Reits": 10,
         "Ações": 10,
         "Fiis": 10,
-        "Emergency Fund": 5
+        "Emergency Fund": 12.5
     },
     "current_value": {
         "Crypto": 29000,
